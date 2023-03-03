@@ -1,222 +1,33 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="statics/vendor/bootstrap/css/bootstrap.css">
-    <link rel="stylesheet" href="statics/css/custom_styles.css">
-    <title>draftss</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="./statics/css/custom_styles.css" />
+    <link
+      rel="stylesheet"
+      href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
+    />
 
-<main>
-    <!-- navigation -->
-    <nav class="container justify-content-around align-items-center py-2">
-        <div class="d-flex justify-content-between align-items-center">
-            <img class="m-2" alt="logo" src="statics/images/logo.png" width="170px"/>
-            <ul class="list-inline mb-0 text-center fw-bold custom-navigation-list">
-                <li class="list-inline-item me-4">Home</li>
-                <li class="list-inline-item me-4">How it works</li>
-                <li class="list-inline-item me-4">Portfolio</li>
-                <li class="list-inline-item me-4">Pricing</li>
-                <li class="list-inline-item me-4">Contact</li>
-                <li class="list-inline-item me-4">Login</li>
-            </ul>
-            <button class="btn btn-primary custom-button fw-semibold"> GET STARTED </button>
-        </div>
+    <title>Draftss</title>
+  </head>
+  <body>
+    <nav class="container">
+      <div class="d-flex justify-content-between align-items-center py-3">
+        <img src="./statics/images/logo.png" width="170px" />
+        <ul class="list-unstyled d-inline-flex custom-navigation-list mb-0">
+          <li class="me-4 fw-bold">Home</li>
+          <li class="me-4 fw-bold">How it works</li>
+          <li class="me-4 fw-bold">Portfolio</li>
+          <li class="me-4 fw-bold">Pricing</li>
+          <li class="me-4 fw-bold">Cotact us</li>
+          <li class="me-4 fw-bold">Login</li>
+        </ul>
+        <button class="btn btn-outline-warning rounded-5 fw-bold">
+          Get started
+        </button>
+      </div>
     </nav>
-
-    <!-- hero section -->
-    <section class="container my-5">
-        <div class="row">
-            <div class="col-6">
-                <h1 class="custom-title fw-bold mb-5">Hire Teams on Easy Monthly Subscription</h1>
-                <ul class="custom-hero-list list-unstyled">
-                    <li class="position-relative mb-3  ps-5"><b>Graphic Design</b> & <b>Illustration</b>  Team</li>
-                    <li class="position-relative mb-3  ps-5"><b>Landing page</b>, <b>Web</b> & <b>App UI</b></li>
-                    <li class="position-relative mb-3  ps-5"><b>WordPress</b> & <b>Webflow</b> Team</li>
-                    <li class="position-relative ps-5"><b>Motion Graphic</b> & <b>Video Editing</b> Team</li>
-                </ul>
-                <button class="btn btn-primary mt-4 custom-button custom-button-move"> EXPLORE PRICING </button>
-            </div>
-            <div class="col-6 d-flex"><img class="rounded-4" alt="top-banner" width="100%" src="statics/images/landing-image.jpg"/></div>
-        </div>
-    </section>
-
-    <!--  companies  -->
-    <section class="container my-5 py-5">
-        <div class="row gx-5 justify-content-center align-items-center">
-            <div class="col-2">
-                <img width="100%" src="/statics/images/Beaver-builder-1.jpg" alt="">
-            </div>
-            <div class="col-2">
-                <img width="100%" src="/statics/images/Hoth.jpg" alt="">
-            </div>
-            <div class="col-2">
-                <img width="100%" src="/statics/images/Raddison.jpg" alt="">
-            </div>
-            <div class="col-2">
-                <img width="100%" src="/statics/images/Ticket-Master.jpg" alt="">
-            </div>
-            <div class="col-2">
-                <img width="100%" src="/statics/images/pCloud.png" alt="">
-            </div>
-        </div>
-    </section>
-
-    <!--  services  -->
-    <section class="container-fluid my-5">
-        <h2 class="text-center display-4 mb-3 mt-5 fw-bold">We solve this for you. Everyday.</h2>
-
-        <h3 class="text-center custom-purple-color mb-5">We are like Netflix for your Design & WordPress requirements.</h3>
-
-        <div class="row px-4 pt-5">
-
-            <div class="col-6 d-flex justify-content-end">
-                <div class="col-9 mt-5 pt-5">
-                    <p class="h1 fw-bold mb-5">Your Graphic Design Team at a Flat Rate</p>
-                    <p class="h2 mb-5">Take your designs to the next level with a dedicated team. Get Complete Branding with Logo & Brand Guide.</p>
-                    <p class="fw-bold h2 custom-purple-color mb-5">Monthly Subscriptions. Cancel any time.</p>
-                    <button class="btn btn-primary custom-button fw-semibold custom-button-move"> GET STARTED </button>
-                </div>
-            </div>
-
-            <div class="col-6"><img src="statics/images/sec1img-min.png" width="100%"></div>
-        </div>
-        <div class="row px-4 pt-5 gx-5">
-            <div class="col-6 d-flex justify-content-end">
-                <div class="col-10 rounded-4 py-5 pe-5"><img class="img-thumbnail rounded-4" src="statics/images/dashboard-image.jpg" width="100%"></div>
-            </div>
-            <div class="col-6 d-flex justify-content-start">
-                <div class="col-9 mt-5">
-                    <p class="h1 fw-bold mb-5">Killer Landing Page, Websites, Dashboard UI & App UI Designs</p>
-                    <p class="h2 mb-5">Get Custom UI Designs for your Websites, Apps & SaaS Dashboards</p>
-                    <p class="fw-bold h2 custom-purple-color mb-5">Faster Turnaround Time of 1-3 Days</p>
-                    <button class="btn btn-primary custom-button fw-semibold custom-button-move"> GET STARTED </button>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  icons  -->
-    <section class="container my-5">
-        <h2 class="text-center display-4 mb-5 mt-5 fw-bold">73+ Types of Design & Code Services</h2>
-        <h4 class="text-center mb-1">Founders, Developers, Startups, Freelancers & Agencies.</h4>
-        <h4 class="text-center mb-5">We’ve got all of you covered with our design & code plans.</h4>
-
-        <div class="row">
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/star-icon.png" width="42px"/>
-                    <span class="ms-4">Branding & Logo</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/human-icon.png" width="42px"/>
-                    <span class="ms-4">Human Illustration</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/computer-icon.png" width="42px"/>
-                    <span class="ms-4">Web UI/UX</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/mobile-icon.png" width="42px"/>
-                    <span class="ms-4">Mobile App UI/UX</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/pern-icon.png" width="42px"/>
-                    <span class="ms-4">Artworks</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/t-shit-icon.png" width="42px"/>
-                    <span class="ms-4">T-shirt Design</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/mail-icon.png" width="42px"/>
-                    <span class="ms-4">Stationery</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/book-icon.png" width="42px"/>
-                    <span class="ms-4">E-Book & Cover</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/milk-icon.png" width="42px"/>
-                    <span class="ms-4">Packaging</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/banner-icon.png" width="42px"/>
-                    <span class="ms-4">Banner Ad</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/infographic-icon.png" width="42px"/>
-                    <span class="ms-4">Infographic</span>
-                </div>
-            </div>
-            <div class="col-3 my-3">
-                <div class="shadow rounded-4 p-4">
-                    <img src="statics/images/social-media-icon.svg" width="42px"/>
-                    <span class="ms-4">Social Media</span>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!--  images  -->
-    <section class="container-fluid my-5">
-        <h2 class="text-center display-4 mb-5 mt-5 fw-bold">See what others have created using Draftss</h2>
-        <div class="row g-2">
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/Portfolio-1.jpg" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/protfolio-2.jpg" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/Portolio-10.jpg" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/Portolio-11.webp" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/portfolio-5.webp" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/Portfolio-6.jpg" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/Portfolio-7.jpg" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/Portfolio-8.webp" width="100%" height="425px" alt="">
-            </div>
-            <div class="col-4">
-                <img class="custom-image" src="statics/images/portfolio-9.jpg" width="100%" height="425px" alt="">
-            </div>
-        </div>
-    </section>
-</main>
-
-<script src="statics/vendor/bootstrap/js/bootstrap.min.js"></script>
-</body>
+  </body>
 </html>
