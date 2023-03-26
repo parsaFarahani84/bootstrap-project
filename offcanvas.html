@@ -11,15 +11,14 @@
     />
   </head>
   <body>
-    <h1>Hello world</h1>
-
+    <!------------------------------------OFFCANVAS--------------------------------->
     <button
       class="btn btn-primary"
       type="button"
       data-bs-toggle="offcanvas"
       data-bs-target="#offcanvasExample"
     >
-      Button with data-bs-target
+      side bar
     </button>
 
     <div
@@ -38,6 +37,35 @@
 
       <div class="offcanvas-body d-lg-none">
         <p>lili</p>
+      </div>
+    </div>
+
+    <!------------------------------------DROPDOWN--------------------------------->
+    <div class="dropdown">
+      <button class="btn btn-warning" data-bs-toggle="dropdown">
+        drop down
+      </button>
+      <ul class="dropdown-menu">
+        <li class="dropdown-item">lolo</li>
+        <li class="dropdown-item">lolo</li>
+        <li class="dropdown-item">lolo</li>
+        <li class="dropdown-item">lolo</li>
+      </ul>
+    </div>
+    <!------------------------------------DROPDOWN--------------------------------->
+    <button
+      class="btn btn-primary"
+      data-bs-target="#collapse"
+      data-bs-toggle="collapse"
+    >
+      collapse
+    </button>
+    <div class="collapse" id="collapse">
+      <div class="card">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Odit molestias
+        perspiciatis ducimus est temporibus assumenda quas, laudantium, adipisci
+        officiis perferendis, maiores saepe aspernatur eligendi asperiores vel
+        ab sit fugit? Quos!
       </div>
     </div>
 
