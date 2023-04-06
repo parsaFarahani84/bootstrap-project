@@ -1,0 +1,88 @@
+/*bootstrap customizations*/
+
+:root {
+    --bs-primary: #47b2e4;
+    --bs-secondary: #37517e;
+    --bs-primary-rgb: 71, 178, 228;
+    --bs-secondary-rgb: 55, 81, 126;
+    --bs-body-color: #444444;
+}
+
+.custom-button-outline {
+    --bs-btn-color: var(--bs-primary);
+    --bs-btn-bg: transparent;
+    --bs-btn-border-color: var(--bs-primary);
+
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: var(--bs-primary);
+    --bs-btn-hover-border-color: var(--bs-primary);
+
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: var(--bs-primary);
+    --bs-btn-active-border-color: var(--bs-primary);
+}
+
+.custom-button {
+    --bs-btn-color: white;
+    --bs-btn-bg: var(--bs-primary);
+    --bs-btn-border-color: var(--bs-primary);
+
+    --bs-btn-hover-color: white;
+    --bs-btn-hover-bg: #3993bd;
+    --bs-btn-hover-border-color: #3993bd;
+
+    --bs-btn-active-color: white;
+    --bs-btn-active-bg: #3993bd;
+    --bs-btn-active-border-color: #3993bd;
+}
+
+
+.navbar {
+    --bs-navbar-hover-color: var(--bs-primary);
+    --bs-navbar-active-color: var(--bs-primary);
+}
+
+.navbar .dropdown-menu {
+    --bs-dropdown-border-width: 0;
+    box-shadow: var(--bs-dropdown-box-shadow);
+    --bs-dropdown-link-hover-color: var(--bs-primary);
+    --bs-dropdown-link-active-color: var(--bs-primary);
+    --bs-dropdown-link-hover-bg: none;
+    --bs-dropdown-link-active-bg: none;
+}
+
+@media screen and (max-width: 768px) {
+    .navbar .dropdown-menu {
+        --bs-dropdown-bg: rgba(40, 58, 90, 0.9);
+        --bs-dropdown-link-color: rgba(255, 255, 255, 0.55);
+    }
+}
+/* styles with bootstrap features */
+
+
+.custom-button-outline.custom-btn-light {
+    --bs-btn-color: white;
+}
+
+.accordion {
+  --bs-accordion-border-width: 0;
+  --bs-accordion-btn-focus-border-color: unset;
+  --bs-accordion-btn-focus-box-shadow: unset;
+  --bs-accordion-active-color: var(--bs-primary);
+  --bs-accordion-active-bg: unset;
+}
+
+.progress {
+  --bs-progress-height: 10px;
+  --bs-progress-bar-bg: var(--bs-secondary);
+  --bs-progress-border-radius: 0;
+}
+
+.card {
+    --bs-card-border-width: 0;
+    --bs-card-border-radius: 0;
+}
+
+.accordion-button::after {
+    margin-left: unset;
+}

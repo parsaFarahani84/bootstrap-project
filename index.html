@@ -1,639 +1,1023 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
-    <link
-      rel="stylesheet"
-      href="./bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css"
-    />
-  </head>
-  <body style="padding: 1rem">
-    <!------------------------------------NAVBAR--------------------------------->
-    <nav
-      id="navbar"
-      class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark mb-5 rounded-3 p-2 d-flex justify-content-between"
-    >
-      <div class="container-fluid">
-        <a class="navbar-brand" style="width: 10%" href="#"
-          ><img
-            class="rounded-5"
-            src="./statics/images/AGM Logo2.jpg"
-            width="55rem"
-        /></a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="offcanvas"
-          data-bs-target="#offcanvas-2"
-          aria-controls="navbarNavDropdown"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
 
-        <div
-          class="offcanvas offcanvas-end"
-          id="offcanvas-2"
-          data-bs-target="#navbar"
-        >
-          <div class="offcanvas-header">
-            <p>header</p>
-            <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-          </div>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>second project</title>
+    <link rel="stylesheet"
+        href="statics/vendor/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet"
+        href="statics/vendor/bootstrap/icons/bootstrap-icons.css">
+    
+        <link rel="stylesheet" href="statics/vendor/bootstrap/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="statics/css/bootstrap-customize.css">
+    <link rel="stylesheet" href="statics/css/custom_css.css">
 
-          <div class="offcanvas-body">
-            <ul class="nav-pills navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link" href="#home">Home</a>
-              </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#card">Cards</a>
-              </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  id="navbarDropdown"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li><hr class="dropdown-divider" /></li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
-              </li>
-              <li class="nav-item">
-                <a
-                  class="nav-link disabled"
-                  href="#"
-                  tabindex="-1"
-                  aria-disabled="true"
-                  >Disabled</a
-                >
-              </li>
-            </ul>
-          </div>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navigation-bar" data-bs-smooth="true" dir="rtl">
+
+    <!--navigation bar-->
+    <nav id="navigation-bar"
+        class="navbar fixed-top navbar-expand-md custom-bg navbar-dark">
+        <div class="py-2 container">
+            <a class="navbar-brand" href="#">LOGO</a>
+
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar"
+                aria-controls="offcanvasNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="offcanvas offcanvas-start custom-bg"
+                id="offcanvasNavbar">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title text-light"
+                        id="offcanvasNavbarLabel">LOGO</h5>
+                    <button type="button" class="btn-close"
+                        data-bs-dismiss="offcanvas"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul
+                        class="navbar-nav justify-content-end flex-grow-1 pe-3 gx-3">
+                        <li class="nav-item">
+                            <a class="nav-link active me-2" href="#">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2" href="#about-us">About</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2"
+                                href="#services">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2"
+                                href="#portfolio">Portfolio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link me-2" href="#team">Team</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#contact">Contact</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle me-2" href="#"
+                                role="button" data-bs-toggle="dropdown">
+                                Dropdown
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a>
+                                </li>
+                                <li><a class="dropdown-item" href="#">Another
+                                        action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something
+                                        else here</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <div class="d-flex mt-4 mt-md-0">
+                        <button
+                            class="btn custom-button-outline custom-btn-light rounded-5">Get
+                            Started</button>
+                    </div>
+                </div>
+            </div>
         </div>
-      </div>
     </nav>
-    <!------------------------------------COLLAPSE--------------------------------->
 
-    <div data-bs-spy="scroll" data-bs-target="#navbar" class="pb-5">
-      <button
-        id="home"
-        class="btn btn-warning"
-        data-bs-target="#collapse"
-        data-bs-toggle="collapse"
-      >
-        click
-      </button>
-      <div class="collapse" id="collapse">
-        <p>
-          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
-          in amet quasi! Distinctio quia laborum adipisci dolor iusto blanditiis
-          harum amet ex, fuga dignissimos! Unde sunt totam explicabo similique
-          inventore.
-        </p>
-      </div>
-      <!------------------------------------DROPDOWN--------------------------------->
-      <button
-        class="btn btn-info"
-        data-bs-target="#dropdown"
-        data-bs-toggle="dropdown"
-      >
-        click
-      </button>
-
-      <ul class="dropdown-menu">
-        <li class="dropdown-item">lolo</li>
-        <li class="dropdown-item">lolo</li>
-        <li class="dropdown-item">lolo</li>
-        <li class="dropdown-item">lolo</li>
-      </ul>
-
-      <!------------------------------------OFFCANVAS--------------------------------->
-      <button
-        class="btn btn-danger"
-        data-bs-toggle="offcanvas"
-        data-bs-target="#offcanvas"
-      >
-        click
-      </button>
-
-      <div class="offcanvas offcanvas-start" id="offcanvas">
-        <div class="offcanvas-body">
-          <button class="btn-close" data-bs-dismiss="offcanvas"></button>
-          <p>body</p>
-        </div>
-        <div class="offcanvas-header">
-          <p>header</p>
-        </div>
-      </div>
-      <!------------------------------------CAROUSEL--------------------------------->
-
-      <div
-        style="width: 40%"
-        id="carouselExampleCaptions"
-        class="carousel slide carousel-dark"
-        data-bs-ride="carousel"
-      >
-        <div class="carousel-indicators">
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="0"
-            class="active"
-            aria-current="true"
-            aria-label="Slide 1"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="1"
-            aria-label="Slide 2"
-          ></button>
-          <button
-            type="button"
-            data-bs-target="#carouselExampleCaptions"
-            data-bs-slide-to="2"
-            aria-label="Slide 3"
-          ></button>
-        </div>
-        <div class="carousel-inner">
-          <div class="carousel-item active">
-            <img
-              src="./statics/images/portfolio-8.webp"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>First slide label</h5>
-              <p>
-                Some representative placeholder content for the first slide.
-              </p>
+    <section class="bg-secondary height-80-viewport">
+        <div class="container h-100 pt-5 pt-lg-0">
+            <div class="row h-100 pt-5 pt-lg-0">
+                <div
+                    class="col-lg-6 col-12 d-flex order-2 order-lg-1 flex-wrap align-items-center h-100 text-white pb-5 pb-lg-0">
+                    <div>
+                        <h1 class="mb-3 display-5 fw-bold">Better Solutions For
+                            Your Business</h1>
+                        <h2 class="text-white-50 mb-5 h4">We are team of
+                            talented designers making websites with Bootstrap
+                        </h2>
+                        <button class="btn custom-button btn-lg rounded-5">GET
+                            STARTED</button>
+                    </div>
+                </div>
+                <div
+                    class="col-lg-6 col-12 d-flex order-1 order-lg-2 align-items-center justify-content-center h-100">
+                    <img src="statics/images/hero-img.png" alt="hero-image"
+                        width="100%" class="custom-animation">
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./statics/images/portfolio-8.webp"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Second slide label</h5>
-              <p>
-                Some representative placeholder content for the second slide.
-              </p>
+        </div>
+    </section>
+
+    <main>
+        <!-- clients -->
+        <section class="bg-light">
+            <div class="container">
+                <div class="row row-cols-lg-6 row-cols-2 py-3 gy-4 gy-lg-0">
+                    <div class="px-5 d-flex align-items-center">
+                        <img src="statics/images/client-1.png" alt="client-1"
+                            class="img-fluid custom-client-image">
+                    </div>
+                    <div class="px-5 d-flex align-items-center">
+                        <img src="statics/images/client-2.png" alt="client-2"
+                            class="img-fluid custom-client-image">
+                    </div>
+                    <div class="px-5 d-flex align-items-center">
+                        <img src="statics/images/client-3.png" alt="client-3"
+                            class="img-fluid custom-client-image">
+                    </div>
+                    <div class="px-5 d-flex align-items-center">
+                        <img src="statics/images/client-4.png" alt="client-4"
+                            class="img-fluid custom-client-image">
+                    </div>
+                    <div class="px-5 d-flex align-items-center">
+                        <img src="statics/images/client-5.png" alt="client-5"
+                            class="img-fluid custom-client-image">
+                    </div>
+                    <div class="px-5 d-flex align-items-center">
+                        <img src="statics/images/client-6.png" alt="client-6"
+                            class="img-fluid custom-client-image">
+                    </div>
+                </div>
             </div>
-          </div>
-          <div class="carousel-item">
-            <img
-              src="./statics/images/portfolio-8.webp"
-              class="d-block w-100"
-              alt="..."
-            />
-            <div class="carousel-caption d-none d-md-block">
-              <h5>Third slide label</h5>
-              <p>
-                Some representative placeholder content for the third slide.
-              </p>
+        </section>
+
+        <!-- about us -->
+        <section id="about-us" class="py-5">
+            <div class="container my-5">
+                <h3
+                    class="text-center custom-section-title position-relative fw-bold text-secondary mb-5 h2">
+                    ABOUT US</h3>
+                <div class="row">
+                    <div class="col-lg-6 col-12">
+                        <p class="mb-4">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                        <ul class="list-unstyled">
+                            <li class="d-flex align-items-center">
+                                <i
+                                    class="bi-check-all text-primary fs-4 me-2"></i>
+                                <span>Ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i
+                                    class="bi-check-all text-primary fs-4 me-2"></i>
+                                <span>Ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat</span>
+                            </li>
+                            <li class="d-flex align-items-center">
+                                <i
+                                    class="bi-check-all text-primary fs-4 me-2"></i>
+                                <span>Ullamco laboris nisi ut aliquip ex ea
+                                    commodo consequat</span>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="col-lg-6 col-12 d-flex flex-wrap">
+                        <p>
+                            Ullamco laboris nisi ut aliquip ex ea commodo
+                            consequat. Duis aute irure dolor in reprehenderit in
+                            voluptate velit esse cillum dolore eu fugiat nulla
+                            pariatur. Excepteur sint occaecat cupidatat non
+                            proident, sunt in culpa qui officia deserunt mollit
+                            anim id est laborum.
+                        </p>
+                        <button
+                            class="btn custom-button-outline rounded-5 mt-auto">Learn
+                            More</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <button
-          class="carousel-control-prev"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="prev"
-        >
-          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-          class="carousel-control-next"
-          type="button"
-          data-bs-target="#carouselExampleCaptions"
-          data-bs-slide="next"
-        >
-          <span class="carousel-control-next-icon" aria-hidden="true"></span>
-          <span class="visually-hidden">Next</span>
-        </button>
-      </div>
-      <!------------------------------------BREADCRUMP--------------------------------->
-      <nav>
-        <ol class="breadcrumb">
-          <li class="breadcrumb-item"><a href="#">Home</a></li>
-          <li class="breadcrumb-item"><a href="#">Library</a></li>
-          <li class="breadcrumb-item active" aria-current="page">Data</li>
-        </ol>
-      </nav>
-      <!------------------------------------MODAL--------------------------------->
-      <button
-        class="btn btn-primary"
-        data-bs-target="#simple-modal"
-        data-bs-toggle="modal"
-      >
-        click me
-      </button>
+        </section>
 
-      <div class="modal fade" id="simple-modal">
-        <div
-          class="modal-dialog modal-dialog-scrollable modal-fullscreen-sm-down"
-        >
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5>Hello my friend</h5>
-              <button data-bs-dismiss="modal" class="btn-close"></button>
+        <!-- accordion -->
+        <section class="bg-light py-5">
+            <div class="container-fluid ps-4 pe-lg-5">
+                <div class="row">
+                    <div class="col-lg-5 col-12 d-flex align-items-center">
+                        <img src="statics/images/why-us.png" alt="why us"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-lg-7 col-12 mt-5 px-lg-5">
+                        <h4 class="display-5 text-secondary">Eum ipsam laborum
+                            deleniti <strong>velit pariatur architecto aut
+                                nihil</strong></h4>
+                        <p class="text-black-50">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua. Duis aute irure dolor in
+                            reprehenderit
+                        </p>
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button fs-3"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne"
+                                        aria-expanded="true"
+                                        aria-controls="collapseOne">
+                                        <span
+                                            class="text-primary pe-2">01</span>
+                                        Accordion Item
+                                    </button>
+                                </h2>
+                                <div id="collapseOne"
+                                    class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the first item's
+                                            accordion body.</strong> It is shown
+                                        by default, until the collapse plugin
+                                        adds the appropriate classes that we use
+                                        to style each element. These classes
+                                        control the overall appearance, as well
+                                        as the showing and hiding via CSS
+                                        transitions. You can modify any of this
+                                        with custom CSS or overriding our
+                                        default variables. It's also worth
+                                        noting that just about any HTML can go
+                                        within the <code>.accordion-body</code>,
+                                        though the transition does limit
+                                        overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingTwo">
+                                    <button
+                                        class="accordion-button collapsed fs-3"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo"
+                                        aria-expanded="false"
+                                        aria-controls="collapseTwo">
+                                        <span
+                                            class="text-primary pe-2">02</span>
+                                        Accordion Item
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingTwo"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the second item's
+                                            accordion body.</strong> It is
+                                        hidden by default, until the collapse
+                                        plugin adds the appropriate classes that
+                                        we use to style each element. These
+                                        classes control the overall appearance,
+                                        as well as the showing and hiding via
+                                        CSS transitions. You can modify any of
+                                        this with custom CSS or overriding our
+                                        default variables. It's also worth
+                                        noting that just about any HTML can go
+                                        within the <code>.accordion-body</code>,
+                                        though the transition does limit
+                                        overflow.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item mb-3">
+                                <h2 class="accordion-header" id="headingThree">
+                                    <button
+                                        class="accordion-button collapsed fs-3"
+                                        type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseThree"
+                                        aria-expanded="false"
+                                        aria-controls="collapseThree">
+                                        <span
+                                            class="text-primary pe-2">03</span>
+                                        Accordion Item
+                                    </button>
+                                </h2>
+                                <div id="collapseThree"
+                                    class="accordion-collapse collapse"
+                                    aria-labelledby="headingThree"
+                                    data-bs-parent="#accordionExample">
+                                    <div class="accordion-body">
+                                        <strong>This is the third item's
+                                            accordion body.</strong> It is
+                                        hidden by default, until the collapse
+                                        plugin adds the appropriate classes that
+                                        we use to style each element. These
+                                        classes control the overall appearance,
+                                        as well as the showing and hiding via
+                                        CSS transitions. You can modify any of
+                                        this with custom CSS or overriding our
+                                        default variables. It's also worth
+                                        noting that just about any HTML can go
+                                        within the <code>.accordion-body</code>,
+                                        though the transition does limit
+                                        overflow.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="modal-body">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit
-              dolore esse quas? Deserunt non ipsam autem doloremque! Quis,
-              animi. Cum sit odio adipisci nemo facilis tempore numquam magnam
-              suscipit alias. Lorem ipsum dolor sit amet consectetur adipisicing
-              elit. Fugit dolore esse quas? Deserunt non ipsam autem doloremque!
-              Quis, animi. Cum sit odio adipisci nemo facilis tempore numquam
-              magnam suscipit alias. Lorem ipsum dolor sit amet consectetur
-              adipisicing elit. Fugit dolore esse quas? Deserunt non ipsam autem
-              doloremque! Quis, animi. Cum sit odio adipisci nemo facilis
-              tempore numquam magnam suscipit alias. Lorem ipsum dolor sit amet
-              consectetur adipisicing elit. Fugit dolore esse quas? Deserunt non
-              ipsam autem doloremque! Quis, animi. Cum sit odio adipisci nemo
-              facilis tempore numquam magnam suscipit alias. Lorem ipsum dolor
-              sit amet consectetur adipisicing elit. Fugit dolore esse quas?
-              Deserunt non ipsam autem doloremque! Quis, animi. Cum sit odio
-              adipisci nemo facilis tempore numquam magnam suscipit alias. Lorem
-              ipsum dolor sit amet consectetur adipisicing elit. Fugit dolore
-              esse quas? Deserunt non ipsam autem doloremque! Quis, animi. Cum
-              sit odio adipisci nemo facilis tempore numquam magnam suscipit
-              alias.
+        </section>
+
+        <!-- skills -->
+        <section class="py-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-6 col-12 d-flex align-items-center mb-5 mb-lg-0">
+                        <img src="statics/images/skills.png" alt="skills"
+                            class="img-fluid">
+                    </div>
+                    <div class="col-lg-6 col-12 ps-4">
+                        <h4 class="text-secondary fw-bold h2">Voluptatem
+                            dignissimos provident quasi corporis voluptates</h4>
+                        <p class="fst-italic">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing
+                            elit, sed do eiusmod tempor incididunt ut labore et
+                            dolore magna aliqua.
+                        </p>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <span>HTML</span>
+                                <span>100%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 100%;"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <span>CSS</span>
+                                <span>90%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 90%;"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <span>JAVASCRIPT</span>
+                                <span>75%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar" role="progressbar"
+                                    style="width: 75%;"></div>
+                            </div>
+                        </div>
+                        <div class="mb-4">
+                            <div class="d-flex justify-content-between">
+                                <span>PHOTOSHOP</span>
+                                <span>50%</span>
+                            </div>
+                            <div class="progress">
+                                <div class="progress-bar w-50"
+                                    role="progressbar"></div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
-            <div class="modal-footer">
-              <button class="btn btn-danger" data-bs-dismiss="modal">
-                Close
-              </button>
+        </section>
+
+        <!-- services -->
+        <section id="services" class="bg-light py-5">
+            <div class="container mb-5">
+                <div class="d-flex flex-wrap justify-content-center mb-5">
+                    <h4
+                        class="position-relative custom-section-title text-secondary h2 mb-5">
+                        SERVICES</h4>
+                    <p class="text-center">
+                        Magnam dolores commodi suscipit. Necessitatibus eius
+                        consequatur ex aliquid fuga eum quidem. Sit sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et
+                        nemo qui impedit suscipit alias ea. Quia fugiat sit in
+                        iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+                <div class="row row-cols-lg-4 row-cols-1 gy-4 gy-lg-0">
+                    <div>
+                        <div class="card shadow custom-hover-move-top">
+                            <div class="card-body p-4">
+                                <i
+                                    class="bi-clock text-primary d-block fs-2 mb-1"></i>
+                                <span
+                                    class="card-title d-block fw-bold mb-2 fs-5">Lorem
+                                    Ipsum</span>
+                                <span class="card-text">
+                                    Voluptatum deleniti atque corrupti quos
+                                    dolores et quas molestias excepturi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card shadow custom-hover-move-top">
+                            <div class="card-body p-4">
+                                <i
+                                    class="bi-fan text-primary d-block fs-2 mb-1"></i>
+                                <span
+                                    class="card-title d-block fw-bold mb-2 fs-5">Lorem
+                                    Ipsum</span>
+                                <span class="card-text">
+                                    Voluptatum deleniti atque corrupti quos
+                                    dolores et quas molestias excepturi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card shadow custom-hover-move-top">
+                            <div class="card-body p-4">
+                                <i
+                                    class="bi-file-earmark text-primary d-block fs-2 mb-1"></i>
+                                <span
+                                    class="card-title d-block fw-bold mb-2 fs-5">Lorem
+                                    Ipsum</span>
+                                <span class="card-text">
+                                    Voluptatum deleniti atque corrupti quos
+                                    dolores et quas molestias excepturi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="card shadow custom-hover-move-top">
+                            <div class="card-body p-4">
+                                <i
+                                    class="bi-geo-fill text-primary d-block fs-2 mb-1"></i>
+                                <span
+                                    class="card-title d-block fw-bold mb-2 fs-5">Lorem
+                                    Ipsum</span>
+                                <span class="card-text">
+                                    Voluptatum deleniti atque corrupti quos
+                                    dolores et quas molestias excepturi
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-          </div>
-        </div>
-      </div>
-      <!------------------------------------TABLE--------------------------------->
+        </section>
 
-      <div class="conatiner table-responsive">
-        <table class="table table-dark table-bordered border-info table-hover">
-          <thead>
-            <tr>
-              <th scope="col">#</th>
-              <th scope="col">First</th>
-              <th scope="col">Last</th>
-              <th scope="col">Handle</th>
-            </tr>
-          </thead>
-          <tbody class="table-group-divider">
-            <tr>
-              <th scope="row">1</th>
-              <td>Mark</td>
-              <td>Otto</td>
-              <td>@mdo</td>
-            </tr>
-            <tr>
-              <th scope="row">2</th>
-              <td>Jacob</td>
-              <td>Thornton</td>
-              <td>@fat</td>
-            </tr>
-            <tr>
-              <th scope="row">3</th>
-              <td colspan="2">Larry the Bird</td>
-              <td>@twitter</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <!------------------------------------CARD--------------------------------->
-      <div class="row d-flex scrollspy-example" id="card">
-        <div class="card text-bg-dark mx-2 p-0" style="width: 18rem">
-          <img
-            src="./statics/images/portfolio-5.webp"
-            class="card-img-top"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <!-- <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul> -->
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-
-        <div class="card mx-2 p-0 text-bg-dark" style="width: 18rem">
-          <img
-            src="./statics/images/Portfolio-1.jpg"
-            class="card-img-top"
-            width="100%"
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <!-- <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul> -->
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-
-        <div class="card mx-2 p-0 text-bg-dark" style="width: 18rem">
-          <img
-            src="./statics/images/Portfolio-7.jpg"
-            class="card-img"
-            alt="..."
-          />
-          <div class="card-body">
-            <h5 class="card-title">Card title</h5>
-            <p class="card-text">
-              Some quick example text to build on the card title and make up the
-              bulk of the card's content.
-            </p>
-          </div>
-          <!-- <ul class="list-group list-group-flush">
-        <li class="list-group-item">An item</li>
-        <li class="list-group-item">A second item</li>
-        <li class="list-group-item">A third item</li>
-      </ul> -->
-          <div class="card-body">
-            <a href="#" class="card-link">Card link</a>
-            <a href="#" class="card-link">Another link</a>
-          </div>
-        </div>
-      </div>
-      <!------------------------------------PROGRESS--------------------------------->
-      <div class="conatiner px-4">
-        <div class="progress my-3">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            aria-valuenow="0"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          ></div>
-        </div>
-        <div class="progress my-3">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            style="width: 25%"
-            aria-valuenow="25"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            CSS
-          </div>
-        </div>
-        <div class="progress my-3">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            style="width: 50%"
-            aria-valuenow="50"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            JavaScript
-          </div>
-        </div>
-        <div class="progress my-3">
-          <div
-            class="progress-bar"
-            role="progressbar"
-            style="width: 75%"
-            aria-valuenow="75"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            React
-          </div>
-        </div>
-        <div class="progress my-3">
-          <div
-            class="progress-bar bg-dark progress-bar-striped progress-bar-animated"
-            role="progressbar"
-            style="width: 100%"
-            aria-valuenow="100"
-            aria-valuemin="0"
-            aria-valuemax="100"
-          >
-            HTML
-          </div>
-        </div>
-      </div>
-      <div class="card" aria-hidden="true">
-        <div class="card-body">
-          <h5 class="card-title placeholder-glow">
-            <span class="placeholder col-6"></span>
-          </h5>
-          <p class="card-text placeholder-glow">
-            <span class="placeholder col-7"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-4"></span>
-            <span class="placeholder col-6"></span>
-            <span class="placeholder col-8"></span>
-          </p>
-          <a class="btn btn-primary disabled placeholder col-6"></a>
-        </div>
-      </div>
-
-      <!------------------------------------FORM--------------------------------->
-      <hr />
-      <div class="row">
-        <div class="col-12">
-          <label class="form-label">Name:</label>
-          <input
-            type="text"
-            placeholder="This Is Disabled"
-            class="form-control"
-            disabled
-          />
-        </div>
-        <div class="col-12">
-          <label class="form-label">Email:</label>
-          <input type="email" class="form-control" />
-        </div>
-        <div class="col-12">
-          <label class="form-label">Color:</label>
-          <input type="color" class="form-control form-control-color" />
-        </div>
-        <div class="col-12">
-          <label class="form-label">File:</label>
-          <input class="form-control" type="file" />
-        </div>
-      </div>
-      <!------------------------------------SELECT--------------------------------->
-
-      <select class="form-select mt-5">
-        <option>val-1</option>
-        <option>val-2</option>
-        <option>val-3</option>
-      </select>
-      <!------------------------------------BUTTONS--------------------------------->
-
-      <div class="form-check form-switch">
-        <input type="checkbox" class="form-check-input" />
-      </div>
-      <div class="form-check">
-        <input type="checkbox" class="form-check-input" />
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" />
-      </div>
-      <div class="form-check">
-        <input class="form-check-input" type="radio" name="flexRadioDefault" />
-      </div>
-      <!--  -->
-      <input type="radio" class="btn-check" name="options" id="option1" />
-      <label class="btn btn-outline-secondary" for="option1">Checked</label>
-
-      <input type="radio" class="btn-check" name="options" id="option2" />
-      <label class="btn btn-outline-secondary" for="option2">Radio</label>
-
-      <input type="radio" class="btn-check" name="options" id="option4" />
-      <label class="btn btn-outline-secondary" for="option4">Radio</label>
-
-      <form class="row g-3">
-        <div class="col-md-4">
-          <div class="form-floating">
-            <input
-              type="text"
-              class="form-control is-valid"
-              id="floatingPassword"
-              placeholder="Password"
-              value="Mark"
-              required
-            />
-            <label for="floatingPassword" class="form-label">First name</label>
-
-            <div class="valid-feedback">Looks good!</div>
-          </div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationServer02" class="form-label">Last name</label>
-          <input
-            type="text"
-            class="form-control is-valid"
-            id="validationServer02"
-            value="Otto"
-            required
-          />
-          <div class="valid-feedback">Looks good!</div>
-        </div>
-        <div class="col-md-4">
-          <label for="validationServerUsername" class="form-label"
-            >Username</label
-          >
-          <div class="input-group has-validation">
-            <span class="input-group-text" id="inputGroupPrepend3">@</span>
-            <input
-              type="text"
-              class="form-control is-invalid"
-              id="validationServerUsername"
-              aria-describedby="inputGroupPrepend3 validationServerUsernameFeedback"
-              required
-            />
-            <div id="validationServerUsernameFeedback" class="invalid-feedback">
-              Please choose a username.
+        <!-- call to action -->
+        <section class="bg-secondary py-5">
+            <div class="container my-5">
+                <div class="row">
+                    <div class="col-lg-10 col-12">
+                        <h5 class="text-white h3 mb-2">Call To Action</h5>
+                        <p class="text-white">
+                            Duis aute irure dolor in reprehenderit in voluptate
+                            velit esse cillum dolore eu fugiat nulla pariatur.
+                            Excepteur sint occaecat cupidatat non proident, sunt
+                            in culpa qui officia deserunt mollit anim id est
+                            laborum.
+                        </p>
+                    </div>
+                    <div class="col-lg-2 col-12 d-flex align-items-center">
+                        <button
+                            class="btn custom-button-outline btn-lg custom-btn-light rounded-5">Call
+                            To Action</button>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <label for="validationServer03" class="form-label">City</label>
-          <input
-            type="text"
-            class="form-control is-invalid"
-            id="validationServer03"
-            aria-describedby="validationServer03Feedback"
-            required
-          />
-          <div id="validationServer03Feedback" class="invalid-feedback">
-            Please provide a valid city.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationServer04" class="form-label">State</label>
-          <select
-            class="form-select is-invalid"
-            id="validationServer04"
-            aria-describedby="validationServer04Feedback"
-            required
-          >
-            <option selected disabled value="">Choose...</option>
-            <option>...</option>
-          </select>
-          <div id="validationServer04Feedback" class="invalid-feedback">
-            Please select a valid state.
-          </div>
-        </div>
-        <div class="col-md-3">
-          <label for="validationServer05" class="form-label">Zip</label>
-          <input
-            type="text"
-            class="form-control is-invalid"
-            id="validationServer05"
-            aria-describedby="validationServer05Feedback"
-            required
-          />
-          <div id="validationServer05Feedback" class="invalid-feedback">
-            Please provide a valid zip.
-          </div>
-        </div>
-        <div class="col-12">
-          <div class="form-check">
-            <input
-              class="form-check-input is-invalid"
-              type="checkbox"
-              value=""
-              id="invalidCheck3"
-              aria-describedby="invalidCheck3Feedback"
-              required
-            />
-            <label class="form-check-label" for="invalidCheck3">
-              Agree to terms and conditions
-            </label>
-            <div id="invalidCheck3Feedback" class="invalid-feedback">
-              You must agree before submitting.
+        </section>
+
+        <!-- portfolio -->
+        <section id="portfolio" class="pt-5">
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center flex-wrap mb-5">
+                    <h4
+                        class="custom-section-title text-secondary h2 position-relative mb-5">
+                        PORTFOLIO</h4>
+                    <p class="text-center">
+                        Magnam dolores commodi suscipit. Necessitatibus eius
+                        consequatur ex aliquid fuga eum quidem. Sit sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et
+                        nemo qui impedit suscipit alias ea. Quia fugiat sit in
+                        iste officiis commodi quidem hic quas.
+                    </p>
+                </div>
+
+                <div class="d-flex justify-content-center mb-5">
+                    <div class="me-3">
+                        <input type="checkbox" class="btn-check"
+                            name="checkbox-1" id="checkbox-1">
+                        <label class="btn custom-button-outline rounded-4"
+                            for="checkbox-1" data-bs-toggle="collapse"
+                            data-bs-target=".collapse-1">
+                            Kitchen
+                        </label>
+                    </div>
+
+                    <div class="me-3">
+                        <input type="checkbox" class="btn-check"
+                            name="checkbox-2" id="checkbox-2" checked>
+                        <label class="btn custom-button-outline rounded-4"
+                            for="checkbox-2" data-bs-toggle="collapse"
+                            data-bs-target=".collapse-2">
+                            Bedroom
+                        </label>
+                    </div>
+
+                    <div>
+                        <input type="checkbox" class="btn-check"
+                            name="checkbox-3" id="checkbox-3" checked>
+                        <label class="btn custom-button-outline rounded-4"
+                            for="checkbox-3" data-bs-toggle="collapse"
+                            data-bs-target=".collapse-3">
+                            Dining
+                        </label>
+                    </div>
+                </div>
+
+                <div class="d-flex custom-images justify-content-between">
+                    <div class="flex-column" style="width: 32%;">
+                        <div class="overflow-hidden">
+                            <img src="statics/images/portfolio-1.jpg"
+                                alt="portfolio-1" class="img-fluid mb-4">
+                        </div>
+
+                        <div class="overflow-hidden collapse collapse-1">
+                            <img src="statics/images/portfolio-2.jpg"
+                                alt="portfolio-2" class="img-fluid mb-4">
+                        </div>
+
+                        <div class="overflow-hidden collapse collapse-2 show">
+                            <img src="statics/images/portfolio-3.jpg"
+                                alt="portfolio-3" class="img-fluid mb-4">
+                        </div>
+                    </div>
+
+                    <div class="flex-column" style="width: 32%;">
+                        <div class="overflow-hidden collapse collapse-1">
+                            <img src="statics/images/portfolio-4.jpg"
+                                alt="portfolio-4" class="img-fluid mb-4">
+                        </div>
+
+                        <div class="overflow-hidden collapse collapse-2 show">
+                            <img src="statics/images/portfolio-5.jpg"
+                                alt="portfolio-5" class="img-fluid mb-4">
+                        </div>
+
+                        <div
+                            class="show overflow-hidden collpase collapse-3 show">
+                            <img src="statics/images/portfolio-7.jpg"
+                                alt="portfolio-7" class="img-fluid mb-4">
+                        </div>
+                    </div>
+
+                    <div class="flex-column" style="width: 32%;">
+                        <div class="overflow-hidden collapse collapse-2 show">
+                            <img src="statics/images/portfolio-8.jpg"
+                                alt="portfolio-8" class="img-fluid mb-4">
+                        </div>
+
+                        <div class="overflow-hidden collapse collapse-1">
+                            <img src="statics/images/portfolio-9.jpg"
+                                alt="portfolio-9" class="img-fluid mb-4">
+                        </div>
+
+                        <div class="overflow-hidden collapse collapse-3 show">
+                            <img src="statics/images/portfolio-6.jpg"
+                                alt="portfolio-6" class="img-fluid mb-4">
+                        </div>
+                    </div>
+                </div>
             </div>
-          </div>
-        </div>
-        <div class="col-12">
-          <button class="btn btn-primary" type="submit">Submit form</button>
-        </div>
-      </form>
-    </div>
-    <script src="./bootstrap-5.3.0-alpha1-dist/js/bootstrap.bundle.min.js"></script>
-  </body>
+        </section>
+
+        <!-- team -->
+        <section id="team" class="bg-light py-5">
+            <div class="container mt-5">
+                <div class="d-flex justify-content-center flex-wrap mb-5">
+                    <h4
+                        class="position-relative custom-section-title text-secondary mb-5 h2">
+                        TEAM</h4>
+                    <p class="text-center">
+                        Magnam dolores commodi suscipit. Necessitatibus eius
+                        consequatur ex aliquid fuga eum quidem. Sit sint
+                        consectetur velit. Quisquam quos quisquam cupiditate. Et
+                        nemo qui impedit suscipit alias ea.
+                    </p>
+                </div>
+                <div class="row row-cols-lg-2 row-cols-1 gy-5 g-lg-5">
+
+                    <div>
+                        <div class="card custom-hover-move-top shadow">
+
+                            <div class="row">
+                                <div class="col-4 ps-5 pe-2 d-flex justify-content-st align-items-center">
+                                    <img src="statics/images/team-1.jpg"
+                                        alt="team-1"
+                                        class="img-fluid rounded-circle">
+    
+                                </div>
+    
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title text-secondary h5 fw-bold">
+                                            Walter White</h6>
+                                        <span class="card-subtitle">Chief Executive
+                                            OfficerChief Executive Officer</span>
+                                        <hr class="w-25">
+                                        <p class="card-text">
+                                            Explicabo voluptatem mollitia et
+                                            repellat qui dolorum quasi
+                                        </p>
+                                        <div>
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-twitter"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-instagram"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5">
+                                                <i class="bi-linkedin"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>    
+                    </div>
+
+                    <div>
+                        <div class="card custom-hover-move-top shadow">
+
+                            <div class="row">
+                                <div
+                                    class="col-4 ps-5 pe-2 d-flex justify-content-st align-items-center">
+                                    <img src="statics/images/team-3.jpg"
+                                        alt="team-1"
+                                        class="img-fluid rounded-circle">
+    
+                                </div>
+    
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title text-secondary h5 fw-bold">
+                                            Walter White</h6>
+                                        <span class="card-subtitle">Chief Executive
+                                            OfficerChief Executive Officer</span>
+                                        <hr class="w-25">
+                                        <p class="card-text">
+                                            Explicabo voluptatem mollitia et
+                                            repellat qui dolorum quasi
+                                        </p>
+                                        <div>
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-twitter"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-instagram"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5">
+                                                <i class="bi-linkedin"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>    
+                    </div>
+                    
+
+                    <div>
+                        <div class="card custom-hover-move-top shadow">
+
+                            <div class="row">
+                                <div
+                                    class="col-4 ps-5 pe-2 d-flex justify-content-st align-items-center">
+                                    <img src="statics/images/team-1.jpg"
+                                        alt="team-1"
+                                        class="img-fluid rounded-circle">
+    
+                                </div>
+    
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title text-secondary h5 fw-bold">
+                                            Walter White</h6>
+                                        <span class="card-subtitle">Chief Executive
+                                            OfficerChief Executive Officer</span>
+                                        <hr class="w-25">
+                                        <p class="card-text">
+                                            Explicabo voluptatem mollitia et
+                                            repellat qui dolorum quasi
+                                        </p>
+                                        <div>
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-twitter"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-instagram"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5">
+                                                <i class="bi-linkedin"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>    
+                    </div>
+                    
+                    <div>
+                        <div class="card custom-hover-move-top shadow">
+
+                            <div class="row">
+                                <div
+                                    class="col-4 ps-5 pe-2 d-flex justify-content-st align-items-center">
+                                    <img src="statics/images/team-1.jpg"
+                                        alt="team-1"
+                                        class="img-fluid rounded-circle">
+    
+                                </div>
+    
+                                <div class="col-8">
+                                    <div class="card-body">
+                                        <h6
+                                            class="card-title text-secondary h5 fw-bold">
+                                            Walter White</h6>
+                                        <span class="card-subtitle">Chief Executive
+                                            OfficerChief Executive Officer</span>
+                                        <hr class="w-25">
+                                        <p class="card-text">
+                                            Explicabo voluptatem mollitia et
+                                            repellat qui dolorum quasi
+                                        </p>
+                                        <div>
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-twitter"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5 me-3">
+                                                <i class="bi-instagram"></i>
+                                            </button>
+    
+                                            <button
+                                                class="btn custom-button-outline rounded-5">
+                                                <i class="bi-linkedin"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+    
+                                </div>
+    
+                            </div>
+    
+                        </div>    
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        
+        <!-- pricing -->
+        <section class="my-5">
+            <div class="container">
+                <div class="d-flex justify-content-center flex-wrap">
+                    <h4 class="text-secondary fw-bold h2 position-relative custom-section-title mb-4">PRICING</h4>
+                </div>
+
+                <p class="text-center mb-5">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit
+                </p>
+
+                <div class="row row-cols-lg-3 row-cols-1 gy-4 gy-lg-0 gx-lg-5">
+                    <div>
+                        <div class="card shadow rounded-2">
+                            <div class="card-body px-5 pt-5">
+                                <h6 class="card-title text-secondary h4 mb-2">Free Plan</h6>
+                                <span class="card-subtitle d-flex align-items-start text-secondary mb-2">
+                                    <span class="fs-4">$</span>
+                                    <span class="display-3">0</span>
+                                </span>
+                                <span class="card-text text-info mb-4 d-block">per month</span>
+                                <ul class="list-unstyled">
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-x fs-4 text-danger"></i>
+                                        <span class="text-decoration-line-through text-muted">Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-x fs-4 text-danger"></i>
+                                        <span class="text-decoration-line-through text-muted">Quam adipiscing vitae proin</span>
+                                    </li>
+                                </ul>
+                                <button class="btn custom-button-outline rounded-5 px-4 mb-3"> Get Started </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card shadow rounded-2 border-5 border-top border-primary">
+                            <div class="card-body px-5 pt-5">
+                                <h6 class="card-title text-secondary h4 mb-2">Free Plan</h6>
+                                <span class="card-subtitle d-flex align-items-start text-secondary mb-2">
+                                    <span class="fs-4">$</span>
+                                    <span class="display-3">0</span>
+                                </span>
+                                <span class="card-text text-info mb-4 d-block">per month</span>
+                                <ul class="list-unstyled">
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                </ul>
+                                <button class="btn custom-button rounded-5 px-4 mb-3"> Get Started </button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div class="card shadow rounded-2">
+                            <div class="card-body px-5 pt-5">
+                                <h6 class="card-title text-secondary h4 mb-2">Free Plan</h6>
+                                <span class="card-subtitle d-flex align-items-start text-secondary mb-2">
+                                    <span class="fs-4">$</span>
+                                    <span class="display-3">0</span>
+                                </span>
+                                <span class="card-text text-info mb-4 d-block">per month</span>
+                                <ul class="list-unstyled">
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                    <li class="mb-4 d-flex align-items-center">
+                                        <i class="me-2 bi-check2 fs-4 text-success"></i>
+                                        <span>Quam adipiscing vitae proin</span>
+                                    </li>
+                                </ul>
+                                <button class="btn custom-button-outline rounded-5 px-4 mb-3"> Get Started </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- contact -->
+        <section id="contact" class="py-5">
+            <div class="container">
+                <div class="d-flex justify-content-center">
+                    <h4 class="text-secondary fw-bold position-relative custom-section-title mb-4">CONTACT</h4>
+                </div>
+                <p class="text-center mb-5">
+                    Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Necessitatibus eius consequatur ex aliquid fuga eum quidem
+                </p>
+
+                <div class="row justify-content-center mb-5">
+                    <div class="col-lg-8 col-12">
+                        <div class="card shadow border-top border-bottom border-4 border-primary px-5 py-5">
+                            <div class="row mb-5">
+                                <div class="col-6">
+                                    <label for="name" class="form-label">your name</label>
+                                    <input id="name" class="form-control" type="text">
+                                </div>
+    
+                                <div class="col-6">
+                                    <label for="email" class="form-label">your email</label>
+                                    <input id="email" class="form-control" type="email">
+                                </div>
+                            </div>
+
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <label for="subject" class="form-label">subject</label>
+                                    <input id="subject" class="form-control" type="text">
+                                </div>
+                            </div>
+
+                            <div class="row mb-5">
+                                <div class="col-12">
+                                    <label for="message" class="form-label">message</label>
+                                    <textarea id="message" class="form-control" type="text" rows="6"></textarea>
+                                </div>
+                            </div>
+
+                            <div class="d-flex justify-content-center">
+                                <button class="btn custom-button btn-lg rounded-5">Send Message</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- newsletter -->
+        <section class="bg-light py-5">
+            <div class="container">
+                <h4 class="text-center text-secondary mb-3">Join Our Newsletter</h4>
+                <p class="mb-5 text-center">Tamen quem nulla quae legam multos aute sint culpa legam noster magna</p>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-6 col-10">
+                        <div class="input-group input-group-lg">
+                            <input class="form-control" type="text">
+                            <button class="btn custom-button">Subscribe</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+    </main>
+
+    <script src="statics/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+</body>
+
 </html>

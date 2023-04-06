@@ -1,0 +1,79 @@
+/* custom needed styles */
+
+.custom-bg {
+    background-color: rgba(40, 58, 90, 0.9);
+}
+
+@media screen and (min-width: 992px) {
+    .height-80-viewport {
+        height: 80vh;
+    }
+}
+
+.custom-animation {
+    animation: up-down 2s ease-in-out infinite alternate-reverse both;
+}
+
+.custom-client-image {
+    filter: grayscale(100%);
+    transform: scale(0.8);
+    transition: 1s;
+}
+
+.custom-client-image:hover {
+    filter: none;
+    transform: scale(1);
+    transition: 1s;
+}
+
+.custom-section-title::before {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 120px;
+    height: 1px;
+    background: #ddd;
+    bottom: -9px;
+    left: calc(50% - 60px);
+}
+
+.custom-section-title::after {
+    content: "";
+    position: absolute;
+    display: block;
+    width: 40px;
+    height: 3px;
+    background: #47b2e4;
+    bottom: -10px;
+    left: calc(50% - 20px);
+}
+
+.custom-hover-move-top {
+    transition: 0.6s;
+}
+
+.custom-hover-move-top:hover {
+    transition: 0.6s;
+    transform: translate(0, -10px);
+}
+
+/* specific styles */
+
+.custom-images img {
+    transition: 0.6s;
+}
+
+.custom-images img:hover {
+    transform: scale(1.05);
+    transition: 0.6s;
+}
+
+@keyframes up-down {
+    0% {
+        transform: translateY(10px);
+    }
+
+    100% {
+        transform: translateY(-10px);
+    }
+}
