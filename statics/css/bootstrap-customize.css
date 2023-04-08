@@ -19,6 +19,21 @@
 }
 
 .navbar {
+  --bs-navbar-color: #fff;
   --bs-navbar-hover-color: var(--bs-primary);
   --bs-navbar-active-color: var(--bs-primary);
 }
+
+.navbar .dropdown-menu {
+  --bs-dropdown-bg: white;
+  --bs-dropdown-link-color: black;
+  --bs-dropdown-link-hover-color: var(--bs-primary);
+  --bs-dropdown-link-hover-bg: transparent;
+}
+
+@media screen and (max-width: 992px) {
+  .navbar .dropdown-menu {
+    --bs-dropdown-bg: rgba(40, 58, 90, 0.9);
+    --bs-dropdown-link-color: white;
+  }
+} ;

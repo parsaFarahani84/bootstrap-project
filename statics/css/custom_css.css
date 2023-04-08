@@ -4,10 +4,6 @@
   background-color: rgba(40, 58, 90, 0.9);
 }
 
-.text-white {
-  color: white;
-}
-
 @media screen and (min-width: 992px) {
   .height-80-viewport {
     height: 80vh;
