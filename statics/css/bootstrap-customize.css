@@ -44,6 +44,16 @@
   --bs-dropdown-link-hover-bg: transparent;
 }
 
+.accordion {
+  --bs-accordion-border-width: 0;
+
+  --bs-accordion-btn-focus-border-color: unset;
+  --bs-accordion-btn-focus-box-shadow: unset;
+
+  --bs-accordion-active-color: var(--bs-primary);
+  --bs-accordion-active-bg: unset;
+}
+
 @media screen and (max-width: 992px) {
   .navbar .dropdown-menu {
     --bs-dropdown-bg: rgba(40, 58, 90, 0.9);
