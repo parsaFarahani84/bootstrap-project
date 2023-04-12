@@ -54,6 +54,10 @@
   --bs-accordion-active-bg: unset;
 }
 
+.progress {
+  --bs-progress-bar-bg: var(--bs-secondary);
+}
+
 @media screen and (max-width: 992px) {
   .navbar .dropdown-menu {
     --bs-dropdown-bg: rgba(40, 58, 90, 0.9);
