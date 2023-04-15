@@ -10,6 +10,10 @@
   }
 }
 
+.list-unstyled li {
+  margin-left: -3rem;
+}
+
 .custom-animation {
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
