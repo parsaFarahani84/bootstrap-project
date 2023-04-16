@@ -25,8 +25,8 @@
     <link rel="stylesheet" href="statics/css/custom_css.css" />
   </head>
 
-  <body>
-    <nav class="navbar custom-bg fixed-top navbar-expand-lg">
+  <body data-bs-target="#navigation-bar" data-bs-smooth="true">
+    <nav class="navbar custom-bg fixed-top navbar-expand-lg" id="navigation-bar">
       <div class="container py-1">
         <a class="navbar-brand text-white" href="#">LOGO</a>
         <button
@@ -60,36 +60,31 @@
             ></button>
           </div>
           <div class="offcanvas-body">
+
             <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link" aria-current="page" href="#home">Home</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Link</a>
+                <a class="nav-link" aria-current="page" href="#about">About us</a>
               </li>
-              <li class="nav-item dropdown mb-3 mb-lg-0">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Dropdown
-                </a>
-                <ul class="dropdown-menu dropdown-menu-dark">
-                  <li><a class="dropdown-item" href="#">Action</a></li>
-                  <li><a class="dropdown-item" href="#">Another action</a></li>
-                  <li>
-                    <hr class="dropdown-divider" />
-                  </li>
-                  <li>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                  </li>
-                </ul>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#services">Services</a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#portfolio">Portfolio</a>
+              </li>  <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#team">Team</a>
+              </li>  <li class="nav-item">
+              </li>  <li class="nav-item">
+                <a class="nav-link" aria-current="page" href="#pricing">Pricing</a>
+              </li>
+                <a class="nav-link" aria-current="page" href="#contact">Contact</a>
+              </li>
+         
+            
               <button
-                class="btn btn-outline-primary custom-btn-outline rounded-5"
+                class="btn btn-outline-primary custom-btn-outline rounded-5 mx-3"
               >
                 Get Started
               </button>
@@ -99,7 +94,7 @@
       </div>
     </nav>
 
-    <section class="bg-secondary h-100">
+    <section class="bg-secondary h-100" id="home">
       <div class="container height-80-viewport">
         <div class="row h-100">
           <div class="col-12 col-lg-6 d-flex align-items-center h-100">
@@ -167,7 +162,7 @@
         </div>
       </div>
     </section>
-    <srction class="py-5">
+    <srction class="py-5" id="about">
       <div class="container my-5">
         <h3
           class="text-center custom-section-title position-relative f-bold text-secondary mb-5 h2"
@@ -367,7 +362,7 @@
         </div>
             
     </section>
-    <section class="mt-2 py-5">
+    <section class="mt-2 py-5" id="services">
       <div class="d-flex flex-column justify-content-center align-items-center">
         <h3
         class="text-center custom-section-title position-relative f-bold text-secondary mb-4 h2"
@@ -442,7 +437,7 @@
             </div>
         </div>
     </section>
-    <section class="mt-5">
+    <section class="mt-5" id="portfolio">
         <div class="d-flex flex-column justify-content-center">
             <h3
             class="text-center custom-section-title position-relative f-bold text-secondary mb-4 h2"
@@ -502,7 +497,7 @@
           </div> 
     </section>
     <!-- -------------------------------------------------------------------------------- -->
-    <section class="mt-2 px-5 mb-5">
+    <section class="mt-2 px-5 mb-5" id="team">
         <div class="d-flex flex-column justify-content-center align-items-center">
           <h3
           class="text-center custom-section-title position-relative f-bold text-secondary mb-4 h2"
@@ -536,7 +531,7 @@
                  </div>
                 </div>
               </div>
-            <div class="col-sm-6 ">
+            <div class="col-sm-6">
                 <div class="card custom-hover-move-top shadow">
                  <div class="row">
                   <div class="col-4 py-4 d-flex justify-content-center align-items-center ">
@@ -607,7 +602,7 @@
           </div>
         </section>
         <!-- ------------------------------------------------------------ -->
-        <section class="mt-5">
+        <section class="mt-5" id="pricing">
           <div class="d-flex flex-column justify-content-center align-items-center">
             <h3
             class="text-center custom-section-title position-relative f-bold text-secondary mb-4 h2"
@@ -726,6 +721,68 @@
               </div>
             </div>
         
+          </div>
+        </section>
+        <section id="contact">
+          <div class="d-flex flex-column justify-content-center align-items-center mb-4">
+            <h3
+            class="text-center custom-section-title position-relative f-bold text-secondary mb-4 h2"
+          >
+           CONTACT
+          </h3>
+          <p class="margin-auto text-center" style="width: 60%;">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eligendi vel sapiente, 
+              distinctio facilis eaque fugit nemo corporis, tenetur at ullam ab reiciendis 
+              minus quod atque.</p>
+          </div>
+          <div class="row px-5 d-flex justify-content-center">
+            <div class="col-8 ">
+              <div class="card shadow border-bottom border-primary border-4 p-4 d-felx">
+                  <div class="row mb-3">
+                    <div class="col-6">
+                      <label for="email" class="form-label">Your Email</label>
+                      <input type="email" id="inputPassword6" class="form-control" >
+                    </div>
+                
+                    <div class="col-6">
+                      <label for="email" class="form-label">Your Passowrd</label>
+                      <input type="password" id="inputPassword6" class="form-control" >
+                    </div>
+                  </div>
+          
+                  <div class="row mb-3">
+                    <div class="col-12">
+                      <label for="email" class="form-label">Your Subject</label>
+                      <input type="text" id="inputPassword6" class="form-control" >
+                    </div>
+                  </div>
+                  <div class="row mb-3">
+                    <div class="col-12">
+                      <label for="exampleFormControlTextarea1" class="form-label">Your Text</label>
+                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                      <div class="col-3">
+                        <button class="btn custom-btn rounded-5">Call to action</button>
+
+                      </div>
+                  </div>
+                </div>
+            </div>
+          </div>
+        </section>
+        <section class="bg-light py-5 mt-5">
+          <div class="container">
+            <h4 class="text-secondary mb-2 text-center">Join Our Newsletter</h4>
+            <p class="text-center mb-4">Lorem ipsum dolor sit, amet consectetur adipisicing elit Pariatur amet consectetur.</p>
+            <div class="row justify-content-center ">
+              <div class="col-6">
+                <div class="input-group input-group-lg">
+                  <input class="form-control" type="text" />
+                  <button class="btn custom-btn">Subscribe</button>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 

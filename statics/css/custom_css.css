@@ -1,5 +1,9 @@
 /* custom needed styles */
 
+body {
+  overflow-x: hidden;
+}
+
 .custom-bg {
   background-color: rgba(40, 58, 90, 0.9);
 }
