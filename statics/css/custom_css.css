@@ -85,3 +85,8 @@ body {
     transform: translateY(-10px);
   }
 }
+
+.d-lg-block {
+  width: 23rem;
+  margin: 0 auto;
+}
